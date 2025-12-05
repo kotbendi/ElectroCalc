@@ -13,6 +13,9 @@ float volt(float a ,float o){
 float Resistance(float v,float a){
     return v / a;
 }
+float Ampers(float v,float om){
+    return v / om;
+}
 float Hz(float leg){
     float freqMHz = calcFrequencyMHz(leg);
     float freqHz = freqMHz * 1000000;
