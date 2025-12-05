@@ -7,7 +7,7 @@ float volt(float a ,float o){
 float Resistance(float v,float a){
     return v / a;
 }
-float gerc(float leg){
+float Hz(float leg){
     float freqMHz = calcFrequencyMHz(leg);
     float freqHz = freqMHz * 1000000;
     printf("Frequency:\n");
@@ -37,7 +37,7 @@ int main() {
             printf("Error cant to low");
             return 1;
         }
-        gerc(length);
+        Hz(length);
     }
     else if (input == 2){
         printf("Enter what you wanna 1.Voltage 2.Resistance \n");
