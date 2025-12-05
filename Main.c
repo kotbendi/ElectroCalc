@@ -1,23 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-float calcFrequencyMHz(float lengthMeters);
-float volt(float a ,float o){
-    return a * o;
-}
-float Resistance(float v,float a){
-    return v / a;
-}
-float Hz(float leg){
-    float freqMHz = calcFrequencyMHz(leg);
-    float freqHz = freqMHz * 1000000;
-    printf("Frequency:\n");
-    printf("  %.3f MHz\n", freqMHz);
-    printf("  %.0f Hz\n", freqHz);
-    return 0;
-}
-float calcFrequencyMHz(float lengthMeters) {
-    return 150.0 / lengthMeters;
-}
+#include "Header.h"
 
 int main() {
     int input;
